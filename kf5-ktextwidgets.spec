@@ -1,15 +1,15 @@
-%define		kdeframever	5.62
+%define		kdeframever	5.65
 %define		qtver		5.9.0
 %define		kfname		ktextwidgets
 
 Summary:	Text editing widgets
 Name:		kf5-%{kfname}
-Version:	5.62.0
+Version:	5.65.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	14364de9b14d556120407bd240e97e0c
+# Source0-md5:	012c2155bca9cf8fa1e018962e984ac3
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5DBus-devel >= %{qtver}
@@ -90,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.md
 %attr(755,root,root) %ghost %{_libdir}/libKF5TextWidgets.so.5
 %attr(755,root,root) %{_libdir}/libKF5TextWidgets.so.*.*
-%{_datadir}/kservicetypes5/kregexpeditor.desktop
+%attr(755,root,root) %{_libdir}/qt5/plugins/designer/ktextwidgets5widgets.so
 
 %files devel
 %defattr(644,root,root,755)
