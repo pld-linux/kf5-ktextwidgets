@@ -1,5 +1,5 @@
 %define		kdeframever	5.86
-%define		qtver		5.14.0
+%define		qtver		5.15.2
 %define		kfname		ktextwidgets
 
 Summary:	Text editing widgets
@@ -11,10 +11,11 @@ Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
 # Source0-md5:	2e138322279639881a79008dc33f473d
 URL:		http://www.kde.org/
+BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Speech-devel >= %{qtver}
 BuildRequires:	Qt5Test-devel >= %{qtver}
 BuildRequires:	Qt5Widgets-devel >= %{qtver}
-BuildRequires:	cmake >= 3.5
+BuildRequires:	cmake >= 3.16
 BuildRequires:	kf5-extra-cmake-modules >= %{version}
 BuildRequires:	kf5-kcompletion-devel >= %{version}
 BuildRequires:	kf5-kconfig-devel >= %{version}
