@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.106
+%define		kdeframever	5.107
 %define		qtver		5.15.2
 %define		kfname		ktextwidgets
 
 Summary:	Text editing widgets
 Name:		kf5-%{kfname}
-Version:	5.106.0
+Version:	5.107.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	ef6aa42a38bbb9fca8db8aaddb050293
+# Source0-md5:	d190ca533ebbfbcda2762a80cc55223e
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Speech-devel >= %{qtver}
